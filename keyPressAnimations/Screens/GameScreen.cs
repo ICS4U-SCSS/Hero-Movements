@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+/// <summary>
+/// This is the screen that the game runs on
+/// </summary>
+
 namespace heroMovements
 {
     public partial class GameScreen : UserControl
