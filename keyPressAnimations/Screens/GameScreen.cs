@@ -17,6 +17,7 @@ namespace heroMovements
     {
         //control variables for hero
         int heroX, heroY, heroSpeed, heroWidth, heroHeight;
+        //TODO: create image array for 4 images
 
         //indicates whether a key is being pressed or not 
         Boolean leftArrowDown, downArrowDown, rightArrowDown, upArrowDown;
@@ -41,6 +42,8 @@ namespace heroMovements
             heroSpeed = 2;
             heroWidth = 10;
             heroHeight = 20;
+
+            //TODO: set images into array
 
             leftArrowDown = downArrowDown = rightArrowDown = upArrowDown = false;
 
@@ -96,19 +99,21 @@ namespace heroMovements
         {
             #region move character based on key presses
 
+            //TODO: set direction value in each if statment
+
             if (leftArrowDown == true)
             {
                 heroX = heroX - heroSpeed;
             }
 
-            if (downArrowDown == true)
-            {
-                heroY = heroY + heroSpeed;
-            }
-
             if (rightArrowDown == true)
             {
                 heroX = heroX + heroSpeed;
+            }
+
+            if (downArrowDown == true)
+            {
+                heroY = heroY + heroSpeed;
             }
 
             if (upArrowDown == true)
@@ -126,6 +131,8 @@ namespace heroMovements
         {
             //draw rectangle to screen
             e.Graphics.FillRectangle(drawBrush, heroX, heroY, heroWidth, heroHeight);
+
+            //TODO: change above to a DrawImage command instead of FillRectangle
         }
 
     }

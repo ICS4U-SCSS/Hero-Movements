@@ -43,6 +43,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
+            this.DoubleBuffered = true;
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(406, 345);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.GameScreen_Paint);
