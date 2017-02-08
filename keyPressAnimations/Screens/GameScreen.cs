@@ -123,6 +123,8 @@ namespace heroMovements
 
             #endregion
 
+            //TODO: create code to check if player went out of bounds
+
             //refresh the screen, which causes the Form1_Paint method to run
             Refresh();
         }
